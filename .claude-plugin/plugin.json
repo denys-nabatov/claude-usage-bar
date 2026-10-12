@@ -1,0 +1,39 @@
+{
+  "name": "usage-bar",
+  "version": "1.0.0",
+  "description": "A board above the prompt with your 5-hour and weekly limit usage and when each resets; warns when a session gets expensive.",
+  "author": {
+    "name": "Denys Nabatov",
+    "url": "https://github.com/denys-nabatov"
+  },
+  "homepage": "https://github.com/denys-nabatov/claude-usage-bar",
+  "repository": "https://github.com/denys-nabatov/claude-usage-bar",
+  "license": "MIT",
+  "keywords": [
+    "usage",
+    "limits",
+    "cost",
+    "status"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "costWarnUsd": {
+      "type": "number",
+      "title": "Session cost warning (USD)",
+      "description": "Toast when this session's cost passes this amount, then again at each doubling.",
+      "default": 5
+    },
+    "turnCostWarnUsd": {
+      "type": "number",
+      "title": "Single turn cost warning (USD)",
+      "description": "Toast when one prompt-to-answer turn costs at least this much.",
+      "default": 2
+    },
+    "limitWarnPct": {
+      "type": "number",
+      "title": "Limit warning (%)",
+      "description": "Toast when the 5-hour or weekly limit reaches this percentage (and again at 95%).",
+      "default": 80
+    }
+  }
+}

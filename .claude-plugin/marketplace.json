@@ -1,0 +1,16 @@
+{
+  "name": "claude-usage-bar",
+  "description": "Claude Code usage board: 5-hour and weekly limit usage with reset countdowns, plus session cost warnings.",
+  "owner": {
+    "name": "Denys Nabatov",
+    "url": "https://github.com/denys-nabatov"
+  },
+  "plugins": [
+    {
+      "name": "usage-bar",
+      "source": "./",
+      "description": "A board above the prompt with your 5-hour and weekly limit usage and when each resets; warns when a session gets expensive.",
+      "version": "1.0.0"
+    }
+  ]
+}
